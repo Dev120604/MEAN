@@ -27,4 +27,12 @@
 
 import fs from 'fs/promises';
 
+console.log("Start");
 
+await fs.writeFile("demo2.txt", "This is demo2.txt");
+
+let content = await fs.readFile("demo2.txt","utf8");
+console.log("Content:",content);
+
+// let content = await fs.readFile("demo2.txt");
+// console.log("Content",content.toString());
