@@ -2,14 +2,14 @@
   "name": "fs_path",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
   "main": "fsModule.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "hello": "node fsModule.js",
-    "start": "node fsModule.js"
+    "start": "node pathModule.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
