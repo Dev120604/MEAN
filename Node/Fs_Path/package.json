@@ -6,7 +6,8 @@
   "main": "fsModule.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hello": "node fsModule.js"
+    "hello": "node fsModule.js",
+    "start": "node fsModule.js"
   },
   "keywords": [],
   "author": "",
