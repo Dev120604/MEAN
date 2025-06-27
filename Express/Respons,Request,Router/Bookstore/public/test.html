@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing PUT requets</title>
+</head>
+<body>
+<h2>Fetch PUT request</h2>
+    <script>
+        async function testPut() {
+           const response = await fetch('/',{method: 'PUT'});
+           const text = await response.text();
+            console.log("PUT's response.text() :",text);
+        }
+        testPut();
+    </script>
+</body>
+</html>
