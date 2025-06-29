@@ -4,9 +4,10 @@ const port = 3000;
 
 const authorRoutes = require('./routes/author');
 const bookRoutes = require('./routes/book');
-const {json} = require("express");
 
 app.use(express.static('public'));
+
+// app.use(express.json());
 
 app.use('/author',authorRoutes);
 app.use('/books',bookRoutes);
@@ -17,6 +18,7 @@ app.get('/',(req,res) => {
 }).post('/',(req,res) => {
     console.log('POST request to /');
     res.send('📚 You did a POST to the Home Page!');
+    // res.send(req.body);
 });
 //or you will do this tell express that if user want get then serve get and else want post then serve post
 // app.route('/')

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title><%= storeName  %> - Home</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<%- include('partials/header') %>
+
+<h1>Welcome to <%= storeName %>!</h1>
+<h2>Featured Products:</h2>
+<ul>
+    <% featuredProducts.forEach((item) => { %>
+    <li>
+        <%= item %>
+    </li>
+    <% }) %>
+</ul>
+</body>
+</html>
