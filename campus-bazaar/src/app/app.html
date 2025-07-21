@@ -1,5 +1,46 @@
-<!-- <div>I am here</div> -->
-{{ title() }}
-<router-outlet />
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a routerLink="/" class="navbar-brand">{{ title() }}</a>
 
-<!-- <div>and here also </div> -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"><i class="bi bi-book"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a routerLink="/" class="nav-link">
+                Home
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/about" class="nav-link">
+                About
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/contact" class="nav-link">
+                Contact
+            </a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/product-list" class="nav-link">
+            Product List
+          </a>
+        </li>
+    </ul>
+  </div>
+
+</nav>
+
+<router-outlet />

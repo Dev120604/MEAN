@@ -1,0 +1,10 @@
+<div class="card h-100 shadow-sm">
+  @if (product) {
+    <img [src]="product.imageUrl" class="card-img-top" [alt]="product.title">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <p class="card-text text-muted">{{ product.description }}</p>
+      <h6 class="text-success">₹{{ product.price }}</h6>
+    </div>
+  }
+</div>

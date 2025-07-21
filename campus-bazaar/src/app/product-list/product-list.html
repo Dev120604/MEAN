@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <h2 class="mb-4 text-primary text-center">
+        Available Books and Academic Items
+    </h2>
+
+    <div class="row">
+        @for(product of products ; track product.title) {
+            <div class="col-12 col-md-4 mb-4">
+                <app-product-card [product]="product"></app-product-card>
+            </div>
+        }
+        @if(products.length === 0) {
+            <div class="alert alert-info text-center">
+                No Products Available at the moment.
+            </div>
+        }
+    </div>
+
+
+</div>
